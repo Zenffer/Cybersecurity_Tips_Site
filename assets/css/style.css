@@ -1,0 +1,114 @@
+/* Custom styles for CyberSecure Hub */
+
+/* General styles */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Card styles */
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Question and answer styles */
+.list-group-item {
+    border: none;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Voting buttons */
+.btn-outline-secondary {
+    border-color: #dee2e6;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f8f9fa;
+}
+
+/* Tips page */
+.tips-category {
+    margin-bottom: 2rem;
+}
+
+.tips-category h2 {
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Form styles */
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Alert styles */
+.alert {
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Text colors */
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+} 
