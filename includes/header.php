@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/db.php';
+require_once __DIR__ . '/db.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,22 +11,23 @@ require_once 'includes/db.php';
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+    <div class="site-wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="/">CyberSecure Hub</a>
+            <a class="navbar-brand" href="index.php">CyberSecure Hub</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/questions/ask.php">Ask a Question</a>
+                        <a class="nav-link" href="questions/ask.php">Ask a Question</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/questions/list.php">Browse Questions</a>
+                        <a class="nav-link" href="questions/list.php">Browse Questions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/tips/tips.php">Security Tips</a>
+                        <a class="nav-link" href="questions/tips/tips.php">Security Tips</a>
                     </li>
                 </ul>
             </div>

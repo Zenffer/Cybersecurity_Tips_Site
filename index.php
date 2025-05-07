@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/db.php';
 require_once 'includes/header.php';
 require_once 'includes/functions.php';
 
@@ -16,7 +17,7 @@ $topQuestions = getTopQuestions(5);
                 <?php if ($topQuestions): ?>
                     <div class="list-group">
                         <?php foreach ($topQuestions as $question): ?>
-                            <a href="/questions/view.php?id=<?php echo $question['id']; ?>" class="list-group-item list-group-item-action">
+                            <a href="questions/view.php?id=<?php echo $question['id']; ?>" class="list-group-item list-group-item-action">
                                 <h5 class="mb-1"><?php echo sanitizeInput($question['title']); ?></h5>
                                 <small class="text-muted">
                                     <?php echo $question['answer_count']; ?> answers • 
@@ -42,7 +43,7 @@ $topQuestions = getTopQuestions(5);
                     <li class="mb-2">📱 Keep your software and devices updated</li>
                     <li class="mb-2">🔍 Be cautious of suspicious emails and links</li>
                 </ul>
-                <a href="/tips/tips.php" class="btn btn-primary">View All Tips</a>
+                <a href="questions/tips/tips.php" class="btn btn-primary">View All Tips</a>
             </div>
         </div>
     </div>
