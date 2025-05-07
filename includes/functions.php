@@ -9,9 +9,10 @@ function getTopQuestions($limit = 5) {
         LEFT JOIN answers a ON q.id = a.question_id 
         GROUP BY q.id 
         ORDER BY answer_count DESC 
-        LIMIT ?
+        LIMIT :limit
     ");
-    $stmt->execute([$limit]);
+    $stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
+    $stmt->execute();
     return $stmt->fetchAll();
 }
 

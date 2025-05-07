@@ -1,8 +1,22 @@
 /* Custom styles for CyberSecure Hub */
 
 /* General styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content wrapper */
+.container {
+    flex: 1 0 auto;
+    padding: 2rem 0;
 }
 
 /* Card styles */
@@ -58,8 +72,12 @@ body {
 
 /* Footer */
 footer {
-    margin-top: 3rem;
+    flex-shrink: 0;
+    background-color: #343a40;
+    color: #fff;
     padding: 1.5rem 0;
+    margin-top: auto;
+    width: 100%;
 }
 
 /* Responsive adjustments */
